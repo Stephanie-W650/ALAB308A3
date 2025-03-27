@@ -1,5 +1,7 @@
 // // Importing database functions. DO NOT MODIFY THIS LINE.
+import { get } from "http";
 import { central, db1, db2, db3, vault } from "./databases.mjs";
+import { getuid } from "process";
 
 async function getUserData(id) {
   const dbs = {
@@ -50,6 +52,9 @@ getUserData(1)
 // getUserData(8)
 // getUserData(9)
 // getUserData(10)
+//getUserData(12) //the number does not correspond
+//getUserData(-1) //the number does not correspond
+//getUserData("1") //the number does not correspond
 
 //way 2
 function getUserData2(id) {
